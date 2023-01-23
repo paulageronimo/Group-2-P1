@@ -1,9 +1,48 @@
 <html>
     <head>
-        <Title>Flask Tutorial!</Title>
+        <title>Page Title</title>
+        <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Texas_A%26M_University_logo.svg/800px-Texas_A%26M_University_logo.svg.png" type="image/icon type">
+
+        <!-- bootstrap info -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+        <style>
+          body {
+            text-align: center;
+          }
+          img {
+            padding: 40px;
+          }
+        </style>
     </head>
     <body>
-        <h1>Hello World!</h1>
-        <p>This is my first Heroku app.</p>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+        <a class="navbar-brand" href="#">Group 2</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav" style="text-align: center;">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('index') }}">Page 1 Title</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('page2') }}">Page 2 Title</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('page3') }}">Page 3 Title</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+        
+        <h1 style="padding-top: 20px;">Title</h1>
+        <img src="#">
+        <h2>Location</h2>
+        <p>Description</p>
+
     </body>
 </html>
